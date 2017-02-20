@@ -1,0 +1,2 @@
+# nxss
+noxscreensaver
