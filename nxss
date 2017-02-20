@@ -1,0 +1,8 @@
+#!/bin/bash
+# Copyright (C) 2017 Pascal Cadotte Michaud <pascal.cadotte@gmail.com>
+# SPDX-License-Identifier: GPL-3.0+
+
+echo "Disabling xscreensaver" && killall xscreensaver
+trap : SIGINT
+$@
+echo "Enabling xscreensaver" && xscreensaver -no-splash &
